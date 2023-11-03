@@ -1,0 +1,11 @@
+<div class="dropdown" id="user-dropdown" ng-if="$ctrl.isLoggedIn()">
+  <button class="btn btn-default dropdown-toggle text-center headerButton" type="button" id="userMenu" 
+   aria-haspopup="false" aria-expanded="false" ng-click="$ctrl.toggleList()">
+    <span class="glyphicon glyphicon-user" id="about"></span>
+  </button>
+  <ul class="dropdown-menu headerMenu" aria-labelledby="userMenu">
+    <li ui-sref="user-profile"><a>Profile</a></li>
+    <li ui-sref="user-games"><a>Games</a></li>
+    <li ng-click="$ctrl.logOut()"><a>Log out</a></li>
+  </ul>
+</div>

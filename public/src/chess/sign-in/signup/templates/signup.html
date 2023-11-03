@@ -1,0 +1,38 @@
+<div>
+	<div class="signin-form">
+		<div class="pacman" style="display: none;"><img src="img/pacman.gif"></div>
+		<span class="server-error" ng-if="$ctrl.signupError">{{$ctrl.signupError}}</span>
+		<h1>Sign up</h1>
+		<form name="signupForm" novalidate>
+			<span class="error" ng-if="signupForm.username.$invalid && signupForm.username.$touched">
+				Invalid username
+			</span>
+			<input type="text" name="username" placeholder="Username"
+			 ng-model="$ctrl.user.username"
+			 required
+			>
+
+			<span class="error" ng-if="signupForm.password.$invalid && signupForm.password.$touched">
+				Invalid password
+			</span>
+			<input type="password" name="password" placeholder="Password"
+			 ng-model="$ctrl.user.password"
+			 required
+			>
+			
+			<span class="error" ng-if="signupForm.email.$invalid && signupForm.email.$touched">
+				Invalid email
+			</span>
+			<input type="email" name="email" placeholder="Email"
+			 ng-model="$ctrl.user.email"
+			 required 
+			>
+
+			<button 
+			 ng-disabled="signupForm.$invalid"
+			 ng-click="$ctrl.signup()">Sign up
+			</button>
+		</form>
+		<p>Have an account already? <a ui-sref="login">Login</a></p>
+	</div>
+</div>

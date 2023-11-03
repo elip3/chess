@@ -1,0 +1,410 @@
+/*small devices and down*/
+@media(max-width: 991px){
+	#big-logo{
+		display: none !important;
+	}
+	#small-logo{
+		display: block !important;
+		width: 50% !important;
+	}
+}
+
+/*medium devices and up*/
+@media(min-width: 992px){
+	#big-logo{
+		display: block !important;
+	}
+	#small-logo{
+		display: none !important;
+	}
+}
+
+.logo {
+	width: 85%;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+}
+
+#about, #user {
+	font-size: 3.5vw;
+	position: relative;
+}
+
+about, user {
+	position: relative;
+	top: 94px;
+}
+
+.headerButton{
+	position: relative;
+	left: 30%;
+	text-align: center;
+	border: 0;
+}
+
+.headerButton:active, .headerButton:focus{
+	background: white !important;
+	outline: 0 !important;
+	color: midnightblue !important;
+}
+
+.headerButton:not(:focus), .headerButton:not(:hover){
+	background: white !important;
+	color: #337ab7 !important;
+}
+
+.headerButton:hover{
+	background: white;
+	color: midnightblue !important;
+}
+
+.headerMenu{
+	font-family: 'Heebo', sans-serif;
+	font-size: 17px;
+}
+
+.headerMenu li a:hover {
+	background-color: #E8F6FD;
+	font-size: 20px;
+}
+
+.board {
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	opacity: 0.7;
+}
+
+.board_history {
+	width: 60%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	opacity: 0.7;
+}
+
+body {
+	position: relative;
+	background: #D2691E;
+}
+
+header {
+	position: relative;
+	background: #fff;
+}
+
+#left, #right {
+	position: relative;
+	top: 250px;
+	font-size: 4vw;
+	color: black;
+}
+
+#left:hover, #right:hover {
+	color: gold;
+}
+
+#left:active, #right:active {
+	color: maroon;
+}
+
+#left {
+	left: 43%;
+}
+
+#right {
+	right: 19%;
+}
+
+.game-title {
+	font-family: 'Heebo', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	margin-left: 10%;
+}
+
+.description {
+	margin-top: 20px;
+	margin-left: -20%;
+	margin-right: -20%;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: 'Heebo', sans-serif;
+	text-align: center;
+}
+
+.description-button {
+	width: 40%;
+	height: 50px;
+	position: relative;
+	left: 30%;
+	margin-top: 20px;
+	border: 0;
+	border-radius: 75px;
+	background: #EAEAEA;
+	text-decoration: none;
+	transition: background-color 0.7s ease;
+	font-size: 20px;
+	text-align: center;
+}
+
+.description-button:hover, .panel-button:hover{
+	background: gold;
+	color: white;
+}
+
+.description-button:focus, .panel-button:focus{
+	outline: 0;
+}
+
+.panel-button {
+	width: 100%;
+	height: 50px;
+	position: relative;
+	left: 18px;
+	margin-top: 25px;
+	border: 0;
+	border-radius: 15px;
+	background: #EAEAEA;
+	text-decoration: none;
+	transition: background-color 0.5s ease;
+	font-size: 22px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+.panel-button:active{
+	font-size: 20px;
+}
+
+.orientation{
+	font-family: 'Heebo', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	position: relative;
+	top: -5px;
+	left: 15px;
+}
+
+.color-button{
+	width: 36px;
+	height: 36px;
+	position: relative;
+	left: 20px;
+	top: 9px;
+	border: 0;
+	border-radius: 20px;
+	background: white;
+}
+
+.color-button:focus{
+	outline: 0;
+}
+
+.clock{
+	position: relative;
+	top: 50px;
+	left: 15px;
+}
+
+.time{
+	font-family: 'Heebo', sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+#whiteTime{
+	color: white;
+}
+
+#blackTime{
+	color: black;
+}
+
+#ack{
+	font-family: 'Heebo', sans-serif;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+#ack p:nth-child(2), #who p{
+	font-weight: bold;
+	font-size: 17px;
+	margin-top: 40px;
+}
+
+#ack p:nth-child(3){
+	font-size: 13px;
+}
+
+#ack a{
+	font-size: 23px;
+	color: white;
+}
+
+#ack a:hover{
+	color: gold
+}
+
+#ack hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#who img{
+	width: 20%;
+	margin-top: 30px;
+	box-shadow: 0 0 12px black;
+}
+
+#who img:hover{
+	animation: spin 1.25s ease 1;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#what{
+	margin-top: 10px;
+}
+
+#what h1{
+	font-family: 'Heebo', sans-serif;
+	font-weight: bold;
+	color: aliceblue;
+	font-size: 25px;
+}
+
+#sandbox{
+	width: 40%;
+	margin: auto;
+}
+
+.error {
+	font-weight: bold;
+	color: red;
+}
+
+.server-error {
+	font-weight: bold;
+	color: red;
+	font-size: 15px;
+	margin bottom: 10px;
+}
+
+.signin-form {
+	position: relative;
+	display: block;
+	margin: auto;
+	background: white;
+	max-width: 400px;
+	padding: 45px;
+	padding-bottom: 35px;
+	text-align: center;
+	border: 2px solid maroon;
+	box-shadow: 0 0 12px maroon;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.signin-form h1 {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+.signin-form input {
+  font-family: 'Heebo', sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.signin-form button {
+  font-family: 'Heebo', sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: orange;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.signin-form button:hover{
+  background: #D2691E;
+}
+.signin-form button:active{
+  background: firebrick;
+}
+
+.signin-form button[disabled]{
+	background: #FFBF95 !important;
+	cursor: default;
+}
+
+.signin-form p{
+	margin-top: 10px;
+}
+.signin-form a{
+	color: darkorange;
+}
+.signin-form a:hover{
+	color: crimson;
+}
+.captured-piece{
+	margin-top: 10px;
+	position: relative;
+}
+.captured-piece-counter{
+  background-color: crimson;
+  border-radius: 20px;
+  color: white;
+  padding: 4px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-dialog {
+	position: relative;
+	top: 200px;
+}
+
+.modal-dialog img {
+	width: 90px;
+	margin: 10px 10px 10px 10px;
+}
+
+.modal-dialog img:hover{
+	cursor: pointer;
+	animation: spin 1.25s ease 1;
+
+}
+
+.level{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Heebo', sans-serif;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+.level:hover{
+	cursor: pointer;
+	font-size: 32px;
+	color: gold;
+}

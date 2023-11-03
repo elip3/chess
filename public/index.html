@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chess</title>
+	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/chessboard-0.3.0.min.css">
+	<link rel="stylesheet" type="text/css" href="css/promotion.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-app="chess">
+	<header>
+		<div class="container">
+			<div class="row">
+				<about class="col-md-2"></about>
+
+				<user class="col-md-2"></user> 
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<ui-view></ui-view>
+   			<promotion></promotion>
+   		</div>
+    </div>
+
+
+<!-- libraries -->
+<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="lib/jquery-ui.js"></script>
+<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="lib/angular-cookies.js"></script>
+<script type="text/javascript" src="lib/chess.js"></script>
+<script type="text/javascript" src="lib/chessboard-0.3.0.min.js"></script>
+<script type="text/javascript" src="lib/cinnamon_engine.js"></script>
+<!-- common chess scripts -->
+<script type="text/javascript" src="src/chess/chess.module.js"></script>
+<script type="text/javascript" src="src/chess/routes/chess.routes.js"></script>
+<script type="text/javascript" src="src/chess/routes/chess.run.js"></script>
+<script type="text/javascript" src="src/chess/description.controller.js"></script>
+<script type="text/javascript" src="src/chess/move.navigation.service.js"></script>
+<script type="text/javascript" src="src/chess/game.service.js"></script>
+<script type="text/javascript" src="src/chess/engine.service.js"></script>
+<script type="text/javascript" src="src/chess/chess.httpinterceptor.js"></script>
+<!-- promotion utilities -->
+<script type="text/javascript" src="src/chess/promotion/promotion.component.js"></script>
+<script type="text/javascript" src="src/chess/promotion/promotion.controller.js"></script>
+<script type="text/javascript" src="src/chess/promotion/promotion.service.js"></script>
+<!-- board orientation -->
+<script type="text/javascript" src="src/chess/orientation/orientation.component.js"></script>
+<script type="text/javascript" src="src/chess/orientation/orientation.controller.js"></script>
+<!-- classical -->
+<script type="text/javascript" src="src/chess/classical/classical.component.js"></script>
+<script type="text/javascript" src="src/chess/classical/classical.controller.js"></script>
+<script type="text/javascript" src="src/chess/classical/classical.panel.component.js"></script>
+<script type="text/javascript" src="src/chess/classical/classical.description.component.js"></script>
+<script type="text/javascript" src="src/chess/classical/classical.panel.controller.js"></script>
+<!-- chess960 -->
+<script type="text/javascript" src="src/chess/chess960/chess960.component.js"></script>
+<script type="text/javascript" src="src/chess/chess960/chess960.controller.js"></script>
+<script type="text/javascript" src="src/chess/chess960/chess960.panel.component.js"></script>
+<script type="text/javascript" src="src/chess/chess960/chess960.description.component.js"></script>
+<script type="text/javascript" src="src/chess/chess960/chess960.panel.controller.js"></script>
+<!-- blitz -->
+<script type="text/javascript" src="src/chess/blitz/blitz.component.js"></script>
+<script type="text/javascript" src="src/chess/blitz/blitz.controller.js"></script>
+<script type="text/javascript" src="src/chess/blitz/blitz.description.component.js"></script>
+<script type="text/javascript" src="src/chess/blitz/blitz.panel.component.js"></script>
+<script type="text/javascript" src="src/chess/blitz/blitz.panel.controller.js"></script>
+<script type="text/javascript" src="src/chess/blitz/blitz.chessclock.component.js"></script>
+<script type="text/javascript" src="src/chess/blitz/blitz.chessclock.controller.js"></script>
+<!-- crazyhouse -->
+<script type="text/javascript" src="src/chess/crazyhouse/crazyhouse.component.js"></script>
+<script type="text/javascript" src="src/chess/crazyhouse/crazyhouse.controller.js"></script>
+<script type="text/javascript" src="src/chess/crazyhouse/crazyhouse.panel.component.js"></script>
+<script type="text/javascript" src="src/chess/crazyhouse/crazyhouse.description.component.js"></script>
+<script type="text/javascript" src="src/chess/crazyhouse/crazyhouse.panel.controller.js"></script>
+<script type="text/javascript" src="src/chess/crazyhouse/crazyhouse.reserves.component.js"></script>
+<script type="text/javascript" src="src/chess/crazyhouse/crazyhouse.reserves.controller.js"></script>
+<!-- header scripts-->
+<script type="text/javascript" src="src/chess/header/about/about.component.js"></script>
+<script type="text/javascript" src="src/chess/header/about/about.controller.js"></script>
+<script type="text/javascript" src="src/chess/header/user/user.component.js"></script>
+<script type="text/javascript" src="src/chess/header/user/user.controller.js"></script>
+<!-- signin scripts -->
+<script type="text/javascript" src="src/chess/sign-in/signin.service.js"></script>
+<script type="text/javascript" src="src/chess/sign-in/signup/signup.component.js"></script>
+<script type="text/javascript" src="src/chess/sign-in/signup/signup.controller.js"></script>
+<script type="text/javascript" src="src/chess/sign-in/login/login.component.js"></script>
+<script type="text/javascript" src="src/chess/sign-in/login/login.controller.js"></script>
+<!-- user scripts -->
+<script type="text/javascript" src="src/chess/user-body/user.service.js"></script>
+<script type="text/javascript" src="src/chess/user-body/profile.component.js"></script>
+<script type="text/javascript" src="src/chess/user-body/profile.controller.js"></script>
+<script type="text/javascript" src="src/chess/user-body/games.component.js"></script>
+<script type="text/javascript" src="src/chess/user-body/games.controller.js"></script>
+<!-- engine difficulty -->
+<script type="text/javascript" src="src/chess/engine-difficulty/difficulty.component.js"></script>
+<script type="text/javascript" src="src/chess/engine-difficulty/difficulty.controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<div>
+	<div class="signin-form">
+		<div class="pacman" style="display: none;"><img src="img/pacman.gif"></div>
+		<span ng-if="$ctrl.loginError" class="server-error">{{$ctrl.loginError}}</span>
+		<h1>Login</h1>
+		<form>
+			<input type="text" ng-model="$ctrl.username" placeholder="Username">
+			<input type="password" ng-model="$ctrl.password" placeholder="Password">
+			<button ng-click="$ctrl.login();">Login</button>
+		</form>
+		<p>Not registered? <a ui-sref="signup">Create an account</a></p>
+	</div>
+</div>
